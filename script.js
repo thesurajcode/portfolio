@@ -96,7 +96,7 @@ function loadFallbackData() {
         "socialLinks": [
             { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/thesurajcode/", "icon": "fab fa-linkedin" },
             { "platform": "GitHub", "url": "https://github.com/thesurajcode", "icon": "fab fa-github" },
-            { "platform": "LeetCode", "url": "https://leetcode.com/u/thesurajcode/", "icon": "fas fa-code" }
+            { "platform": "LeetCode", "url": "https://leetcode.com/u/thesurajcode//", "icon": "fas fa-code" }
         ]
     };
 }
@@ -386,5 +386,5 @@ function throttle(func, limit) {
 
 // Apply throttling to scroll events
 window.addEventListener('scroll', throttle(updateActiveNavLink, 100));
-
 window.addEventListener('scroll', throttle(handleNavbarScroll, 100));
+
