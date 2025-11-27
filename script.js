@@ -67,7 +67,7 @@ function loadFallbackData() {
                 "description": "A custom DNS server developed in Java to simulate hierarchical query resolution with caching mechanisms.",
                 "icon": "fas fa-server",
                 "tags": ["Java", "Socket Programming", "Networking"],
-                "githubUrl": "https://www.linkedin.com/in/thesurajcode/"
+                "githubUrl": "https://github.com/thesurajcode"
             }
         ],
         "certifications": [
