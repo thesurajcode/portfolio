@@ -67,7 +67,7 @@ function loadFallbackData() {
                 "description": "A custom DNS server developed in Java to simulate hierarchical query resolution with caching mechanisms.",
                 "icon": "fas fa-server",
                 "tags": ["Java", "Socket Programming", "Networking"],
-                "githubUrl": "https://github.com/Sg-suraj"
+                "githubUrl": "https://www.linkedin.com/in/thesurajcode/"
             }
         ],
         "certifications": [
@@ -94,9 +94,9 @@ function loadFallbackData() {
             }
         ],
         "socialLinks": [
-            { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/suraj-kumar-930b47235", "icon": "fab fa-linkedin" },
-            { "platform": "GitHub", "url": "https://github.com/Sg-suraj", "icon": "fab fa-github" },
-            { "platform": "LeetCode", "url": "https://leetcode.com/u/Suraj_Kr1/", "icon": "fas fa-code" }
+            { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/thesurajcode/", "icon": "fab fa-linkedin" },
+            { "platform": "GitHub", "url": "https://github.com/thesurajcode", "icon": "fab fa-github" },
+            { "platform": "LeetCode", "url": "https://leetcode.com/u/thesurajcode//", "icon": "fas fa-code" }
         ]
     };
 }
@@ -387,3 +387,4 @@ function throttle(func, limit) {
 // Apply throttling to scroll events
 window.addEventListener('scroll', throttle(updateActiveNavLink, 100));
 window.addEventListener('scroll', throttle(handleNavbarScroll, 100));
+
