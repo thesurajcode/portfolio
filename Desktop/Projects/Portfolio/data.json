@@ -1,0 +1,323 @@
+{
+  "personal": {
+    "name": "Suraj Kumar",
+    "title": "Computer Science Undergraduate & AI Enthusiast",
+    "email": "surajchandan09@gmail.com",
+    "phone": "+91-XXXXXXXXXX",
+    "location": "New DElhi, Delhi, India",
+    "about": [
+      "Enthusiastic computer science undergraduate with strong fundamentals in algorithms, operating systems, and networking. I am passionate about leveraging technology to build innovative and secure applications, with a focus on full-stack web development and applied AI.",
+      "Currently pursuing my B.Tech. in Computer Science and Engineering at Galgotias University, where I maintain a CGPA of 8.3. Recently completed comprehensive coursework in Full Stack Web Development, gaining hands-on experience with the MERN stack and integrating Generative AI into modern applications."
+    ]
+  },
+  "education": {
+    "degree": "B.Tech in Computer Science and Engineering",
+    "university": "Galgotias University",
+    "cgpa": "8.3",
+    "year": "2021-2025"
+  },
+  "skills": [
+    {
+      "name": "JavaScript",
+      "icon": "fab fa-js-square",
+      "category": "frontend"
+    },
+    {
+      "name": "Node.js",
+      "icon": "fab fa-node-js",
+      "category": "backend"
+    },
+    {
+      "name": "Express.js",
+      "icon": "fas fa-server",
+      "category": "backend"
+    },
+    {
+      "name": "React.js",
+      "icon": "fab fa-react",
+      "category": "frontend"
+    },
+    {
+      "name": "Python",
+      "icon": "fab fa-python",
+      "category": "programming"
+    },
+    {
+      "name": "HTML/CSS",
+      "icon": "fab fa-html5",
+      "category": "frontend"
+    },
+    {
+      "name": "SQL",
+      "icon": "fas fa-database",
+      "category": "database"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "fas fa-leaf",
+      "category": "database"
+    },
+    {
+      "name": "Git/GitHub",
+      "icon": "fab fa-git-alt",
+      "category": "tools"
+    },
+    {
+      "name": "Java",
+      "icon": "fab fa-java",
+      "category": "programming"
+    },
+    {
+      "name": "Firebase",
+      "icon": "fas fa-fire",
+      "category": "cloud"
+    },
+    {
+      "name": "Flask",
+      "icon": "fas fa-flask",
+      "category": "backend"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Online Doctor Appointment & AI Health Summary System",
+      "description": "A comprehensive healthcare platform featuring secure doctor-patient communication with AI-powered health summaries and intelligent appointment scheduling using Gemini API.",
+      "longDescription": "Built a full-stack web application that revolutionizes healthcare communication. Features include real-time chat between doctors and patients, AI-generated health summaries based on patient data, secure appointment booking system, and integration with modern web technologies for optimal performance.",
+      "icon": "fas fa-stethoscope",
+      "tags": ["React.js", "Node.js", "Flask", "Firebase", "Gemini AI", "Socket.io"],
+      "technologies": {
+        "frontend": ["React.js", "CSS3", "JavaScript"],
+        "backend": ["Node.js", "Express.js", "Flask"],
+        "database": ["Firebase"],
+        "ai": ["Gemini API"],
+        "tools": ["Git", "VS Code"]
+      },
+      "features": [
+        "Real-time chat functionality",
+        "AI-powered health summaries",
+        "Secure appointment booking",
+        "Patient data management",
+        "Doctor dashboard",
+        "Mobile responsive design"
+      ],
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/Sg-suraj",
+      "status": "completed",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Plant Analysis Tool",
+      "description": "A web application using Gemini AI to identify plant species from images and provide comprehensive care recommendations with a modern user interface.",
+      "longDescription": "Developed an intelligent plant identification system that leverages AI to analyze plant images and provide detailed information about species, care requirements, and health recommendations. The application features a clean, intuitive interface for easy plant management.",
+      "icon": "fas fa-leaf",
+      "tags": ["Express.js", "Gemini AI", "HTML/CSS", "Firebase", "Image Processing"],
+      "technologies": {
+        "frontend": ["HTML5", "CSS3", "JavaScript"],
+        "backend": ["Express.js", "Node.js"],
+        "database": ["Firebase"],
+        "ai": ["Gemini API"],
+        "tools": ["Git", "Postman"]
+      },
+      "features": [
+        "Image-based plant identification",
+        "Care recommendations",
+        "Plant health analysis",
+        "User-friendly interface",
+        "Mobile responsive design",
+        "Plant database management"
+      ],
+      "liveUrl": "#",
+      "githubUrl": "https://github.com/Sg-suraj",
+      "status": "completed",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Custom DNS Server",
+      "description": "A high-performance DNS server implementation in Java that simulates hierarchical query resolution with caching mechanisms for improved response times.",
+      "longDescription": "Implemented a custom DNS server from scratch using Java socket programming. The server handles DNS queries efficiently with hierarchical resolution, implements caching for faster responses, and supports various DNS record types with proper error handling.",
+      "icon": "fas fa-server",
+      "tags": ["Java", "Socket Programming", "Networking", "DNS Protocol", "Caching"],
+      "technologies": {
+        "programming": ["Java"],
+        "concepts": ["Socket Programming", "Networking", "DNS Protocol"],
+        "tools": ["Eclipse", "Git", "Wireshark"]
+      },
+      "features": [
+        "Hierarchical DNS resolution",
+        "Caching mechanism",
+        "Multiple DNS record support",
+        "Error handling",
+        "Performance optimization",
+        "Command-line interface"
+      ],
+      "githubUrl": "https://github.com/Sg-suraj",
+      "status": "completed",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Face Recognition Attendance System",
+      "description": "An AI-powered system to automate attendance using face recognition, ensuring accuracy and security with real-time processing.",
+      "icon": "fas fa-user-check",
+      "tags": ["Python", "OpenCV", "CNN", "TensorFlow"],
+      "githubUrl": "https://github.com/Sg-suraj",
+      "status": "in-progress",
+      "featured": false
+    }
+  ],
+  "certifications": [
+    {
+      "category": "Technical Certifications",
+      "icon": "fas fa-certificate",
+      "items": [
+        {
+          "name": "Oracle Certified: Java SE Programmer",
+          "issuer": "Oracle",
+          "date": "2024",
+          "url": "https://drive.google.com/file/d/19kp6vg7bJ5j2L7q2L0jtdMK9p2P1WYBP/view",
+          "credentialId": "OC-JAVA-2024"
+        },
+        {
+          "name": "Oracle Certified: Database Programming with SQL",
+          "issuer": "Oracle",
+          "date": "2024",
+          "url": "https://drive.google.com/file/d/1hpyEVydCnCyqCqkkTZav4CZb415ntPZT/view",
+          "credentialId": "OC-SQL-2024"
+        },
+        {
+          "name": "CCNA – Introduction to Networks",
+          "issuer": "Cisco Networking Academy",
+          "date": "2023",
+          "url": "https://www.credly.com/badges/482071d6-1b67-4d16-a923-1f67fc6cd743",
+          "credentialId": "482071d6-1b67-4d16-a923-1f67fc6cd743"
+        },
+        {
+          "name": "Python Essentials 1",
+          "issuer": "Cisco Networking Academy",
+          "date": "2023",
+          "url": "https://www.credly.com/badges/0c642e7b-dbac-4a6f-b096-941f2144a932",
+          "credentialId": "0c642e7b-dbac-4a6f-b096-941f2144a932"
+        },
+        {
+          "name": "Software Engineering",
+          "issuer": "NPTEL",
+          "date": "2023",
+          "url": "https://drive.google.com/file/d/1IJuyGlkBkVqDX1ElFUFWf0k9HJvuIaxI/view",
+          "credentialId": "NPTEL-SE-2023"
+        }
+      ]
+    },
+    {
+      "category": "Achievements & Leadership",
+      "icon": "fas fa-trophy",
+      "items": [
+        {
+          "name": "Team Lead - Humanity Saviours Club",
+          "description": "Led a team of 15+ volunteers in community service initiatives",
+          "date": "2023-Present",
+          "url": null
+        },
+        {
+          "name": "Academic Excellence Award (Class X)",
+          "description": "Awarded for outstanding academic performance",
+          "date": "2019",
+          "url": "https://drive.google.com/file/d/1-ISKVabUkG3-ky38RVzZot9H_yevAAfB/view"
+        },
+        {
+          "name": "B.Tech CSE - CGPA 8.3",
+          "description": "Maintained consistent academic excellence throughout the program",
+          "date": "2021-2025",
+          "url": null
+        },
+        {
+          "name": "Full Stack Development Certification",
+          "description": "Comprehensive training in MERN stack development",
+          "date": "2024",
+          "url": null
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Team Lead",
+      "organization": "Humanity Saviours Club",
+      "duration": "2023 - Present",
+      "description": "Leading community service initiatives and managing team of 15+ volunteers for various social causes.",
+      "responsibilities": [
+        "Organizing community outreach programs",
+        "Managing team coordination and task delegation",
+        "Developing strategies for social impact projects",
+        "Collaborating with local NGOs and organizations"
+      ]
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/suraj-kumar-930b47235",
+      "icon": "fab fa-linkedin",
+      "username": "suraj-kumar-930b47235"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Sg-suraj",
+      "icon": "fab fa-github",
+      "username": "Sg-suraj"
+    },
+    {
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/u/Suraj_Kr1/",
+      "icon": "fas fa-code",
+      "username": "Suraj_Kr1"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:surajchandan09@gmail.com",
+      "icon": "fas fa-envelope",
+      "username": "surajchandan09@gmail.com"
+    }
+  ],
+  "stats": {
+    "projectsCompleted": "10+",
+    "yearsOfExperience": "2+",
+    "certificationsEarned": "5+",
+    "technologiesUsed": "15+"
+  },
+  "interests": [
+    "Artificial Intelligence",
+    "Web Development",
+    "Open Source Contributions",
+    "Community Service",
+    "Competitive Programming",
+    "Technology Innovation"
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Fluent"
+    },
+    {
+      "name": "Hindi",
+      "proficiency": "Native"
+    }
+  ],
+  "resume": {
+    "url": "#",
+    "lastUpdated": "2025-01-01"
+  },
+  "theme": {
+    "primaryColor": "#3b82f6",
+    "darkMode": true,
+    "animations": true
+  },
+  "seo": {
+    "title": "Suraj Kumar - Computer Science Student & AI Enthusiast",
+    "description": "Portfolio of Suraj Kumar, a Computer Science undergraduate specializing in full-stack web development and AI applications. Explore my projects, skills, and certifications.",
+    "keywords": "Suraj Kumar, Computer Science, Web Developer, AI Enthusiast, React, Node.js, Python, Portfolio",
+    "author": "Suraj Kumar"
+  }
+}
