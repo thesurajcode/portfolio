@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Kumar | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="images/Suraj.jpg" alt="A professional headshot of Suraj Kumar">
+            </div>
+            <h1>Hello, I'm<br>Suraj Kumar</h1>
+            <p class="subtitle">Computer Science Undergraduate & AI Enthusiast</p>
+            <a href="#projects" class="cta-button">
+                <i class="fas fa-code"></i>
+                View My Projects
+            </a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Online Doctor Appointment & AI Health Summary System</h3>
+                <p>Built a secure doctor-patient portal with appointment scheduling and real-time notifications. Implemented role-based authentication using Firebase and automated AI health summaries with Gemini API.</p>
+                <div class="project-tags">
+                    <span class="project-tag">React.js</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">Flask</span>
+                    <span class="project-tag">Firebase</span>
+                    <span class="project-tag">Gemini API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sg-suraj" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    <a href="#" class="btn btn-secondary" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>DNS Server</h3>
+                <p>Developed a custom DNS server in Java to simulate hierarchical DNS query resolution. Optimized query handling to improve domain lookup response time.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Java</span>
+                    <span class="project-tag">Socket Programming</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sg-suraj" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="section-title">
+            <h2>My Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fab fa-java"></i><span>Java</span></div>
+            <div class="skill-card"><i class="fab fa-react"></i><span>ReactJS</span></div>
+            <div class="skill-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="skill-card"><i class="fas fa-database"></i><span>Databases</span></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git/GitHub</span></div>
+            <div class="skill-card"><i class="fas fa-terminal"></i><span>Algorithms</span></div>
+            <div class="skill-card"><i class="fas fa-server"></i><span>OS/Networking</span></div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/Suraj.jpg" alt="Suraj Kumar in a professional setting">
+            </div>
+           <div class="about-text">
+    <p>
+        I'm Suraj Kumar, a 4th-year Computer Science student at Galgotias University and a Full-Stack Developer with a passion for AI.
+    </p>
+    <p>
+        My expertise includes building scalable applications using Python and JavaScript. I have solid fundamentals in data structures, algorithms, and networking. I am particularly interested in leveraging technology to solve challenges in sustainable development.
+    </p>
+</div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="section-title">
+            <h2>Certifications & Achievements</h2>
+        </div>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <h3><i class="fas fa-award"></i> Certifications</h3>
+                <ul class="cert-list">
+                    <li><a href="https://drive.google.com/file/d/19kp6vg7bJ5j2L7q2L0jtdMK9p2P1WYBP/view?usp=drive_link" target="_blank">Oracle Certified: Java</a></li>
+                    <li><a href="https://drive.google.com/file/d/1hpyEVydCnCyqCqkkTZav4CZb415ntPZT/view?usp=drive_link" target="_blank">Oracle Certified: Database Programming with SQL</a></li>
+                    <li><a href="https://www.credly.com/badges/482071d6-1b67-4d16-a923-1f67fc6cd743" target="_blank">Cisco Networking Academy: CCNA – Introduction to Networks</a></li>
+                    <li><a href="https://www.credly.com/badges/0c642e7b-dbac-4a6f-b096-941f2144a932" target="_blank">Python Essentials 1 (Cisco Networking Academy)</a></li>
+                    <li><a href="https://drive.google.com/file/d/1IJuyGlkBkVqDX1ElFUFWf0k9HJvuIaxI/view?usp=drive_link" target="_blank">NPTEL: Software Engineering (IIT Kharagpur)</a></li>
+                </ul>
+            </div>
+            <div class="cert-card">
+                <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                <ul class="cert-list">
+                    <li>Team Lead, Humanity Saviours Club – coordinated events and managed volunteer efforts.</li>
+                    <li><a href="https://drive.google.com/file/d/1-ISKVabUkG3-ky38RVzZot9H_yevAAfB/view?usp=drive_link" target="_blank">Academic Excellence Award at the district level (Class X)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-content">
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">I'm always open to discussing new projects and opportunities. Feel free to reach out!</p>
+            <div class="contact-info">
+                <a href="mailto:surajchandan09@gmail.com" class="contact-email">surajchandan09@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/suraj-kumar-930b47235/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Sg-suraj" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/Suraj_Kr1/" target="_blank" aria-label="LeetCode Profile"><i class="fas fa-code"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Suraj Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
