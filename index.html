@@ -1,167 +1,823 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Suraj Kumar | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description"
+        content="Suraj Kumar - Computer Science Graduate | Full Stack Developer | Java | React | Node.js | AI">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
+
+    <!-- ================= NAVBAR ================= -->
+  <header class="header">
+
+    <nav class="navbar container">
+
+        <a href="#" class="logo">
+            Suraj<span>.</span>
+        </a>
+
+        <!-- Navigation -->
+
+        <ul class="nav-menu">
+
+            <li><a href="#projects">Work</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Stack</a></li>
+
+            <li><a href="#journey">Journey</a></li>
+
+            <li><a href="#certifications">Certifications</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <a href="assets/resume/Suraj_Kumar_Resume.pdf"
+            class="resume-btn"
+            target="_blank">
+
+            Resume
+
+        </a>
+
+        <!-- Mobile Menu Button -->
+
+        <div class="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
         </div>
+
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-image">
-                <img src="images/Suraj.jpg" alt="A professional headshot of Suraj Kumar">
-            </div>
-            <h1>Hello, I'm<br>Suraj Kumar</h1>
-            <p class="subtitle">Computer Science Undergraduate & AI Enthusiast</p>
-            <a href="#projects" class="cta-button">
-                <i class="fas fa-code"></i>
-                View My Projects
-            </a>
-        </div>
-    </section>
+</header>
+<!--==================== NAVBAR ====================-->
 
-    <section id="projects" class="section">
-        <div class="section-title">
-            <h2>My Projects</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-stethoscope"></i>
-                </div>
-                <h3>Online Doctor Appointment & AI Health Summary System</h3>
-                <p>Built a secure doctor-patient portal with appointment scheduling and real-time notifications. Implemented role-based authentication using Firebase and automated AI health summaries with Gemini API.</p>
-                <div class="project-tags">
-                    <span class="project-tag">React.js</span>
-                    <span class="project-tag">Node.js</span>
-                    <span class="project-tag">Flask</span>
-                    <span class="project-tag">Firebase</span>
-                    <span class="project-tag">Gemini API</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Sg-suraj" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    <a href="#" class="btn btn-secondary" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <h3>DNS Server</h3>
-                <p>Developed a custom DNS server in Java to simulate hierarchical DNS query resolution. Optimized query handling to improve domain lookup response time.</p>
-                <div class="project-tags">
-                    <span class="project-tag">Java</span>
-                    <span class="project-tag">Socket Programming</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Sg-suraj" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="skills" class="section">
-        <div class="section-title">
-            <h2>My Technical Skills</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
-            <div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
-            <div class="skill-card"><i class="fab fa-java"></i><span>Java</span></div>
-            <div class="skill-card"><i class="fab fa-react"></i><span>ReactJS</span></div>
-            <div class="skill-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
-            <div class="skill-card"><i class="fas fa-database"></i><span>Databases</span></div>
-            <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git/GitHub</span></div>
-            <div class="skill-card"><i class="fas fa-terminal"></i><span>Algorithms</span></div>
-            <div class="skill-card"><i class="fas fa-server"></i><span>OS/Networking</span></div>
-        </div>
-    </section>
 
-    <section id="about" class="section">
-        <div class="section-title">
-            <h2>About Me</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="images/Suraj.jpg" alt="Suraj Kumar in a professional setting">
+<!--==================== HERO ====================-->
+
+<section id="home" class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-left">
+
+            <p class="hero-subtitle">
+
+                Building products that solve
+                real-world problems.
+
+            </p>
+
+            <h1 class="hero-title">
+
+                Suraj Kumar
+
+             </h1>
+            <p class="hero-description">
+
+                Computer Science graduate building fast, scalable
+                and user-friendly web applications using Java,
+                React, Node.js and modern web technologies.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+                <a href="assets/resume/Suraj_Kumar_Resume.pdf"
+                    class="btn-outline"
+                    target="_blank">
+
+                    Download Resume
+
+                </a>
+
             </div>
-           <div class="about-text">
-    <p>
-        I'm Suraj Kumar, a 4th-year Computer Science student at Galgotias University and a Full-Stack Developer with a passion for AI.
-    </p>
-    <p>
-        My expertise includes building scalable applications using Python and JavaScript. I have solid fundamentals in data structures, algorithms, and networking. I am particularly interested in leveraging technology to solve challenges in sustainable development.
-    </p>
+            <div class="hero-social">
+
+    <a href="https://github.com/thesurajcode" target="_blank">
+        GitHub
+    </a>
+
+    <span>•</span>
+
+    <a href="https://linkedin.com/in/thesurajcode" target="_blank">
+        LinkedIn
+    </a>
+
+    <span>•</span>
+
+    <a href="mailto:surajchandan09@gmail.com">
+        Email
+    </a>
+
 </div>
-        </div>
-    </section>
 
-    <section id="certifications" class="section">
-        <div class="section-title">
-            <h2>Certifications & Achievements</h2>
         </div>
-        <div class="cert-grid">
-            <div class="cert-card">
-                <h3><i class="fas fa-award"></i> Certifications</h3>
-                <ul class="cert-list">
-                    <li><a href="https://drive.google.com/file/d/19kp6vg7bJ5j2L7q2L0jtdMK9p2P1WYBP/view?usp=drive_link" target="_blank">Oracle Certified: Java</a></li>
-                    <li><a href="https://drive.google.com/file/d/1hpyEVydCnCyqCqkkTZav4CZb415ntPZT/view?usp=drive_link" target="_blank">Oracle Certified: Database Programming with SQL</a></li>
-                    <li><a href="https://www.credly.com/badges/482071d6-1b67-4d16-a923-1f67fc6cd743" target="_blank">Cisco Networking Academy: CCNA – Introduction to Networks</a></li>
-                    <li><a href="https://www.credly.com/badges/0c642e7b-dbac-4a6f-b096-941f2144a932" target="_blank">Python Essentials 1 (Cisco Networking Academy)</a></li>
-                    <li><a href="https://drive.google.com/file/d/1IJuyGlkBkVqDX1ElFUFWf0k9HJvuIaxI/view?usp=drive_link" target="_blank">NPTEL: Software Engineering (IIT Kharagpur)</a></li>
-                </ul>
-            </div>
-            <div class="cert-card">
-                <h3><i class="fas fa-trophy"></i> Achievements</h3>
-                <ul class="cert-list">
-                    <li>Team Lead, Humanity Saviours Club – coordinated events and managed volunteer efforts.</li>
-                    <li><a href="https://drive.google.com/file/d/1-ISKVabUkG3-ky38RVzZot9H_yevAAfB/view?usp=drive_link" target="_blank">Academic Excellence Award at the district level (Class X)</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact" class="section">
-        <div class="section-title">
-            <h2>Get In Touch</h2>
+        <div class="hero-right">
+
+            <div class="image-wrapper">
+
+                <img src="assets/images/profile.jpg"
+                    alt="Suraj Kumar">
+
+            </div>
+
         </div>
-        <div class="contact-content">
-            <p style="color: var(--text-secondary); margin-bottom: 2rem;">I'm always open to discussing new projects and opportunities. Feel free to reach out!</p>
-            <div class="contact-info">
-                <a href="mailto:surajchandan09@gmail.com" class="contact-email">surajchandan09@gmail.com</a>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/suraj-kumar-930b47235/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Sg-suraj" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                    <a href="https://leetcode.com/u/Suraj_Kr1/" target="_blank" aria-label="LeetCode Profile"><i class="fas fa-code"></i></a>
+
+    </div>
+
+</section>
+    <!-- ================= ABOUT ================= -->
+     <section id="about" class="about">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            About
+        </p>
+
+        <h2 class="section-title">
+
+            Building software with purpose,
+            curiosity and consistency.
+
+        </h2>
+
+        <div class="about-grid">
+
+            <div class="about-left">
+
+                <p>
+
+                    I'm <strong>Suraj Kumar</strong>, a Computer Science
+                    student passionate about backend development,
+                    full-stack web applications and artificial
+                    intelligence.
+
+                </p>
+
+                <p>
+
+                    My journey started with Java programming and
+                    gradually expanded into the MERN stack,
+                    REST APIs, databases and machine learning
+                    projects.
+
+                </p>
+
+                <p>
+
+                    I enjoy building products that solve
+                    real-world problems while continuously improving
+                    my problem-solving and software engineering skills.
+
+                </p>
+
+            </div>
+
+            <div class="about-right">
+
+                <div class="info-card">
+
+                    <h3>Education</h3>
+
+                    <p>
+                        B.Tech Computer Science — CGPA 8.52
+                    </p>
+
+                    <span>
+                        Galgotias University · Jun 2022 – Jun 2026
+                    </span>
+
                 </div>
+
+                <div class="info-card">
+
+                    <h3>Current Focus</h3>
+
+                    <p>
+
+                        Full Stack Development
+                        • REST APIs • PostgreSQL
+                        • AI Integration
+
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Experience</h3>
+
+                    <p>
+
+                        Team Lead, Humanity Saviours Club (2022–2023)
+                        — coordinated volunteers and supported planning
+                        of community welfare, animal care and tree
+                        plantation initiatives.
+
+                    </p>
+
+                </div>
+
             </div>
+
         </div>
-    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Suraj Kumar. All Rights Reserved.</p>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
+</section>
+<!--==================== ABOUT ====================-->
+
+
+
+    <!-- ================= PROJECTS ================= -->
+     <section id="projects" class="projects">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            Selected Work
+        </p>
+
+        <h2 class="section-title">
+
+            A collection of projects
+            I've enjoyed building.
+
+        </h2>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="assets/images/doctor.png"
+                        alt="AI Doctor Appointment & Health Summary System">
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <h3>
+                        AI Doctor Appointment &amp; Health Summary System
+                    </h3>
+
+                    <p>
+
+                        A production-style full-stack healthcare platform
+                        with role-based authentication (JWT + bcrypt),
+                        appointment scheduling, a doctor consultation
+                        workflow, and a Flask microservice that uses the
+                        Gemini API to convert clinical notes into
+                        patient-friendly health summaries.
+                        Follows Controller → Service → Repository
+                        architecture. Deployed on Vercel and Render.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>React.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>PostgreSQL</span>
+                        <span>Prisma ORM</span>
+                        <span>JWT</span>
+                        <span>Flask</span>
+                        <span>Gemini API</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://ai-doctor-appointment-health-summar.vercel.app/" target="_blank">Live</a>
+
+                        <a href="https://github.com/thesurajcode/ai-doctor-appointment-health-summary-system" target="_blank">GitHub</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Project 2 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="assets/images/dns-server.png"
+                        alt="Recursive DNS Server">
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">02</span>
+
+                    <h3>Simple Recursive DNS Server</h3>
+
+                    <p>
+
+                        A DNS resolver in Java using UDP Datagram Sockets
+                        that checks a local domain map first, then forwards
+                        unknown queries to Google's 8.8.8.8. Connected to
+                        a Python Flask backend and an HTML/JS frontend so
+                        users can resolve domain names to IP addresses
+                        through a web interface.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Java</span>
+                        <span>UDP Sockets</span>
+                        <span>Flask</span>
+                        <span>HTML/JS</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/thesurajcode/DNS-Server" target="_blank">GitHub</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Project 3 -->
+
+            <article class="project-card">
+
+                <div class="project-image project-image-placeholder">
+
+                    <i class="fas fa-hammer"></i>
+                    <span>In Progress</span>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">
+
+                        03
+
+                    </span>
+
+                    <h3>
+
+                        VicharHub
+                        <span class="status-badge">In Progress</span>
+
+                    </h3>
+
+                    <p>
+
+                        Building a social platform where people can
+                        share ideas, discover communities and engage
+                        in meaningful discussions.
+
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>Next.js</span>
+
+                        <span>PostgreSQL</span>
+
+                        <span>Express</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--==================== SELECTED WORK ====================-->
+
+    <!-- ================= SKILLS ================= -->
+
+<!--==================== TECH STACK ====================-->
+
+<section id="skills" class="skills">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            Tech Stack
+        </p>
+
+        <h2 class="section-title">
+            Technologies I use to build modern applications.
+        </h2>
+
+        <div class="skills-wrapper">
+
+            <div class="skill-category">
+
+                <h3>Languages</h3>
+
+                <div class="skill-list">
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Frontend</h3>
+
+                <div class="skill-list">
+                    <span>React.js</span>
+                    <span>Tailwind CSS</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Backend</h3>
+
+                <div class="skill-list">
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>Flask</span>
+                    <span>REST APIs</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Database</h3>
+
+                <div class="skill-list">
+                    <span>PostgreSQL</span>
+                    <span>Prisma ORM</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Auth &amp; AI</h3>
+
+                <div class="skill-list">
+                    <span>JWT</span>
+                    <span>bcrypt</span>
+                    <span>Gemini API</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Tools &amp; Deployment</h3>
+
+                <div class="skill-list">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Vercel</span>
+                    <span>Render</span>
+                    <span>Postman</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>Core CS</h3>
+
+                <div class="skill-list">
+                    <span>DSA</span>
+                    <span>OS</span>
+                    <span>Computer Networks</span>
+                    <span>DBMS</span>
+                    <span>OOP</span>
+                    <span>UDP Sockets</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================== JOURNEY ====================-->
+
+<section id="journey" class="journey">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            Journey
+        </p>
+
+        <h2 class="section-title">
+            Every project has been a step towards becoming a better developer.
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <span class="year">2025</span>
+
+                <div class="timeline-content">
+
+                    <h3>Recursive DNS Server</h3>
+
+                    <p>
+                        Built a DNS resolver in Java with UDP sockets,
+                        connected to a Python Flask backend and a
+                        simple web interface.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span class="year">2025</span>
+
+                <div class="timeline-content">
+
+                    <h3>AI Doctor Appointment &amp; Health Summary System</h3>
+
+                    <p>
+                        Built a production-style full-stack healthcare
+                        platform with JWT auth, appointment management,
+                        consultation workflow, and a Flask + Gemini API
+                        microservice for AI-generated health summaries.
+                        Deployed across Vercel, Render, and Neon PostgreSQL.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span class="year">2024</span>
+
+                <div class="timeline-content">
+
+                    <h3>Started Full Stack Development</h3>
+
+                    <p>
+                        Learned React, Node.js, Express and PostgreSQL
+                        while building practical applications and
+                        completing Oracle and Cisco certifications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================== CERTIFICATIONS ====================-->
+
+<section id="certifications" class="certifications">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            Certifications
+        </p>
+
+        <h2 class="section-title">
+            Credentials earned along the way,
+            and a record of showing up.
+        </h2>
+
+        <div class="cert-columns">
+
+            <div class="cert-column">
+
+                <h3 class="cert-column-title">
+                    <i class="fas fa-certificate"></i>
+                    Technical Certifications
+                </h3>
+
+                <ul class="cert-list">
+
+                    <li>
+                        <a href="https://drive.google.com/file/d/19kp6vg7bJ5j2L7q2L0jtdMK9p2P1WYBP/view" target="_blank">
+                            <span class="cert-name">Oracle Certified: Java SE Programmer</span>
+                            <span class="cert-meta">Oracle • 2024</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://drive.google.com/file/d/1hpyEVydCnCyqCqkkTZav4CZb415ntPZT/view" target="_blank">
+                            <span class="cert-name">Oracle Certified: Database Programming with SQL</span>
+                            <span class="cert-meta">Oracle • 2024</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.credly.com/badges/482071d6-1b67-4d16-a923-1f67fc6cd743" target="_blank">
+                            <span class="cert-name">CCNA – Introduction to Networks</span>
+                            <span class="cert-meta">Cisco Networking Academy • 2023</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.credly.com/badges/0c642e7b-dbac-4a6f-b096-941f2144a932" target="_blank">
+                            <span class="cert-name">Python Essentials 1</span>
+                            <span class="cert-meta">Cisco Networking Academy • 2023</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://drive.google.com/file/d/1IJuyGlkBkVqDX1ElFUFWf0k9HJvuIaxI/view" target="_blank">
+                            <span class="cert-name">Software Engineering</span>
+                            <span class="cert-meta">NPTEL, IIT Kharagpur • 2023</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="cert-column">
+
+                <h3 class="cert-column-title">
+                    <i class="fas fa-trophy"></i>
+                    Achievements & Leadership
+                </h3>
+
+                <ul class="cert-list">
+
+                    <li class="cert-item-plain">
+                        <span class="cert-name">Team Lead, Humanity Saviours Club</span>
+                        <span class="cert-meta">2022 – 2023</span>
+                        <p class="cert-description">
+                            Coordinated volunteers and supported planning
+                            of community welfare, animal care and tree
+                            plantation initiatives.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://drive.google.com/file/d/1-ISKVabUkG3-ky38RVzZot9H_yevAAfB/view" target="_blank">
+                            <span class="cert-name">Academic Excellence Award (Class X)</span>
+                            <span class="cert-meta">District level • 2019</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================== CONTACT ====================-->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            Contact
+        </p>
+
+        <h2 class="section-title">
+            Let's build something meaningful together.
+        </h2>
+
+        <p class="contact-text">
+
+            I'm always interested in discussing software,
+            backend development, AI, and exciting new opportunities.
+
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:surajchandan09@gmail.com">
+                Email
+            </a>
+
+            <a href="https://github.com/thesurajcode" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/thesurajcode" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="assets/resume/Suraj_Kumar_Resume.pdf" target="_blank">
+                Resume
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= FOOTER ================= -->
+
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h2>
+            Suraj<span>.</span>
+        </h2>
+
+        <p>
+            Designed & Developed with ❤️ using HTML, CSS & JavaScript
+        </p>
+
+        <span>
+            © 2026 Suraj Kumar. All Rights Reserved.
+        </span>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
