@@ -61,6 +61,34 @@ if(toggle && menu){
 }
 
 /* ===========================
+   HEADER SCROLL & SCROLL TO TOP
+=========================== */
+
+const header = document.querySelector(".header");
+const scrollTopBtn = document.getElementById("scroll-top-btn");
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    if(header){
+        header.classList.toggle("scrolled", scrollY > 40);
+    }
+
+    if(scrollTopBtn){
+        scrollTopBtn.classList.toggle("is-active", scrollY > 400);
+    }
+}, { passive: true });
+
+if(scrollTopBtn){
+    scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+
+/* ===========================
    ACTIVE NAV LINK ON SCROLL
 =========================== */
 
@@ -98,7 +126,7 @@ if(sections.length && navLinks.length){
 =========================== */
 
 const revealTargets = document.querySelectorAll(
-    ".about-grid, .project-card, .skill-category, .timeline-item, .info-card, .cert-column"
+    ".about-grid, .project-card, .skill-category, .timeline-item, .info-card, .cert-column, .contact-links, .section-title"
 );
 
 revealTargets.forEach(el => el.classList.add("reveal"));
@@ -116,7 +144,7 @@ if(revealTargets.length){
 
         });
 
-    }, { threshold: .15 });
+    }, { threshold: .1, rootMargin: "0px 0px -40px 0px" });
 
     revealTargets.forEach(el => revealObserver.observe(el));
 
