@@ -109,15 +109,17 @@
         right:-100%;
         width:280px;
         height:100vh;
-        background:rgba(15,14,12,.98);
+        background:var(--mobile-nav-bg);
+        border-left:1px solid var(--border);
         backdrop-filter:blur(20px);
+        -webkit-backdrop-filter:blur(20px);
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
         gap:35px;
         transition:right .4s var(--ease);
-        box-shadow:-10px 0 30px rgba(0,0,0,.08);
+        box-shadow:-10px 0 30px rgba(0,0,0,.15);
         z-index:1100;
     }
 
@@ -130,7 +132,14 @@
     }
 
     .menu-toggle{
-        display:block;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        font-size:1.3rem;
+        cursor:pointer;
+        color:var(--primary-text);
         z-index:1200;
     }
 

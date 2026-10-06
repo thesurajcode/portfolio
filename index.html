@@ -35,6 +35,18 @@
 
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Anti-flicker Theme Init -->
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem('theme');
+                const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {}
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -66,19 +78,23 @@
 
         </ul>
 
-        <a href="assets/resume/Suraj_Kumar_Resume.pdf"
-            class="resume-btn"
-            target="_blank">
+        <!-- Nav Actions: Theme Toggle, Resume & Mobile Menu -->
+        <div class="nav-actions">
 
-            Resume
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle Day/Night Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
 
-        </a>
+            <a href="assets/resume/Suraj_Kumar_Resume.pdf"
+                class="resume-btn"
+                target="_blank">
+                Resume
+            </a>
 
-        <!-- Mobile Menu Button -->
-
-        <div class="menu-toggle">
-
-            <i class="fa-solid fa-bars"></i>
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
         </div>
 

@@ -1,4 +1,40 @@
 /* ===========================
+   THEME TOGGLE (Night / Day Mode)
+=========================== */
+
+const themeToggleBtn = document.getElementById("theme-toggle");
+
+const updateThemeIcon = (theme) => {
+    if(!themeToggleBtn) return;
+    const icon = themeToggleBtn.querySelector("i");
+    if(icon){
+        if(theme === "light"){
+            icon.className = "fa-solid fa-sun";
+            themeToggleBtn.setAttribute("title", "Switch to Night Mode");
+            themeToggleBtn.setAttribute("aria-label", "Switch to Night Mode");
+        } else {
+            icon.className = "fa-solid fa-moon";
+            themeToggleBtn.setAttribute("title", "Switch to Day Mode");
+            themeToggleBtn.setAttribute("aria-label", "Switch to Day Mode");
+        }
+    }
+};
+
+const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+updateThemeIcon(currentTheme);
+
+if(themeToggleBtn){
+    themeToggleBtn.addEventListener("click", () => {
+        const activeTheme = document.documentElement.getAttribute("data-theme") || "dark";
+        const newTheme = activeTheme === "dark" ? "light" : "dark";
+        
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateThemeIcon(newTheme);
+    });
+}
+
+/* ===========================
    MOBILE MENU
 =========================== */
 
