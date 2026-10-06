@@ -436,6 +436,44 @@ section:nth-child(even){
     text-transform:uppercase;
 }
 
+.edu-list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    margin-top:10px;
+}
+
+.edu-item{
+    position:relative;
+}
+
+.edu-item:not(:last-child){
+    padding-bottom:14px;
+    border-bottom:1px solid var(--border);
+}
+
+.edu-item h4{
+    font-size:.98rem;
+    font-weight:600;
+    color:var(--primary-text);
+    margin-bottom:2px;
+}
+
+.edu-item p{
+    font-size:.9rem;
+    color:var(--secondary-text);
+    margin-bottom:2px;
+}
+
+.edu-item span{
+    display:block;
+    margin-top:2px;
+    color:var(--accent);
+    font-size:.8rem;
+    letter-spacing:.6px;
+    text-transform:uppercase;
+}
+
 /* ===========================
    PROJECTS
 =========================== */
