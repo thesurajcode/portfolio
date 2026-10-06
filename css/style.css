@@ -466,7 +466,7 @@ section:nth-child(even){
 .project-content h3{
     font-family:var(--heading-font);
     font-size:2.2rem;
-    margin-bottom:16px;
+    margin-bottom:12px;
     display:flex;
     align-items:center;
     gap:14px;
@@ -486,9 +486,46 @@ section:nth-child(even){
     white-space:nowrap;
 }
 
+.ai-badge{
+    background:rgba(200,146,58,.15);
+    color:var(--accent);
+    border-color:var(--accent);
+}
+
 .project-content p{
     color:var(--secondary-text);
-    margin-bottom:24px;
+    margin-bottom:18px;
+    line-height:1.8;
+}
+
+.project-highlights{
+    list-style:none;
+    margin-bottom:22px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.project-highlights li{
+    position:relative;
+    padding-left:22px;
+    font-size:.93rem;
+    color:var(--secondary-text);
+    line-height:1.65;
+}
+
+.project-highlights li::before{
+    content:"✦";
+    position:absolute;
+    left:0;
+    top:0;
+    color:var(--accent);
+    font-size:.75rem;
+}
+
+.project-highlights li strong{
+    color:var(--primary-text);
+    font-weight:600;
 }
 
 .tech-stack{
