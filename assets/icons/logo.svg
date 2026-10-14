@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B1713"/>
+      <stop offset="50%" stop-color="#12100E"/>
+      <stop offset="100%" stop-color="#080706"/>
+    </linearGradient>
+
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE19D"/>
+      <stop offset="25%" stop-color="#E5B45F"/>
+      <stop offset="65%" stop-color="#C8923A"/>
+      <stop offset="100%" stop-color="#9E691A"/>
+    </linearGradient>
+
+    <!-- Subtle Accent Gradient for Code Brackets -->
+    <linearGradient id="bracketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEBB8"/>
+      <stop offset="50%" stop-color="#DBA449"/>
+      <stop offset="100%" stop-color="#A57324"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE19D" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#C8923A" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#4A3412" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#E5B45F" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Radial Ambient Glow -->
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DBA449" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#C8923A" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Squircle Base with Border -->
+  <rect x="28" y="28" width="456" height="456" rx="108" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="14"/>
+
+  <!-- Ambient Golden Center Glow -->
+  <circle cx="256" cy="256" r="185" fill="url(#goldGlow)"/>
+
+  <!-- Brand Mark: Code Brackets < / > with Sculpted Monogram S -->
+  <g id="brand-mark">
+    <!-- Left Bracket < -->
+    <path d="M 148 184 L 84 256 L 148 328" fill="none" stroke="url(#bracketGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Right Bracket > -->
+    <path d="M 364 184 L 428 256 L 364 328" fill="none" stroke="url(#bracketGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Sculpted Tech 'S' Monogram -->
+    <path d="M 314 192 
+             C 314 158, 288 138, 256 138 
+             C 218 138, 194 164, 194 198 
+             C 194 238, 226 256, 258 270 
+             C 292 286, 318 306, 318 344 
+             C 318 384, 288 408, 252 408 
+             C 214 408, 190 384, 188 348" 
+          fill="none" 
+          stroke="url(#goldGrad)" 
+          stroke-width="32" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+
+    <!-- Top & Bottom Code Dot Accents -->
+    <circle cx="256" cy="94" r="8" fill="url(#goldGrad)"/>
+    <circle cx="256" cy="452" r="8" fill="url(#goldGrad)"/>
+  </g>
+</svg>

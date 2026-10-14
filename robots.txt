@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /assets/icons/
+Allow: /favicon.ico
+
+Sitemap: https://thesurajcode.netlify.app/sitemap.xml
