@@ -1,59 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient: Subtle Dark Obsidian -->
+    <!-- Background Gradient: Deep Slate Obsidian -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A1815"/>
-      <stop offset="100%" stop-color="#0A0908"/>
+      <stop offset="0%" stop-color="#181512"/>
+      <stop offset="100%" stop-color="#0B0A08"/>
     </linearGradient>
 
-    <!-- Foreground Gradient: Radiant Warm Gold -->
+    <!-- Warm Gold Gradient for Prompt & Cursor -->
     <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FCE19D"/>
-      <stop offset="40%" stop-color="#E5B45F"/>
+      <stop offset="45%" stop-color="#E5B45F"/>
       <stop offset="100%" stop-color="#C8923A"/>
     </linearGradient>
 
-    <!-- Border Gradient -->
+    <!-- Metallic Border Gradient -->
     <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FCE19D" stop-opacity="0.9"/>
-      <stop offset="50%" stop-color="#C8923A" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#E5B45F" stop-opacity="0.85"/>
+      <stop offset="0%" stop-color="#FCE19D" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#C8923A" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#5C4215" stop-opacity="0.45"/>
     </linearGradient>
   </defs>
 
-  <!-- Squircle Base -->
-  <rect x="28" y="28" width="456" height="456" rx="100" fill="url(#bg)" stroke="url(#border)" stroke-width="16"/>
+  <!-- Squircle Base with Border -->
+  <rect x="28" y="28" width="456" height="456" rx="96" fill="url(#bg)" stroke="url(#border)" stroke-width="14"/>
 
-  <!-- Left Bracket < -->
-  <path d="M 154 180 L 86 256 L 154 332" 
+  <!-- Terminal Prompt > -->
+  <path d="M 128 172 L 228 256 L 128 340" 
         fill="none" 
         stroke="url(#gold)" 
-        stroke-width="32" 
+        stroke-width="44" 
         stroke-linecap="round" 
         stroke-linejoin="round"/>
 
-  <!-- Right Bracket > -->
-  <path d="M 358 180 L 426 256 L 358 332" 
-        fill="none" 
+  <!-- Terminal Cursor _ -->
+  <line x1="272" y1="340" x2="384" y2="340" 
         stroke="url(#gold)" 
-        stroke-width="32" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"/>
-
-  <!-- Bold, Clean, Modern Geometric 'S' Monogram -->
-  <!-- Top bar -> Right corner -> Spine -> Left corner -> Bottom bar -->
-  <path d="M 304 196
-           L 304 186
-           C 304 164, 282 148, 256 148
-           C 224 148, 204 166, 204 194
-           C 204 228, 226 244, 256 256
-           C 288 268, 308 284, 308 318
-           C 308 346, 286 364, 256 364
-           C 226 364, 206 348, 206 326
-           L 206 316"
-        fill="none"
-        stroke="url(#gold)"
-        stroke-width="38"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
+        stroke-width="44" 
+        stroke-linecap="round"/>
 </svg>
